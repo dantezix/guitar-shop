@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: block;
+}
+
+body {
+    background-color: #eee;
+    text-align: center;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    min-height: 75px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+#img-container {
+    width: 60vw;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.nav-link {
+    padding: 20px 20px;
+    scroll-behavior: smooth;
+}
+
+.nav-link:hover {
+    background-color: #eee;
+}
+
+#hero {
+    padding-top: 120px;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+#form {
+    display: block;
+}
+
+#hero input[type="email"] {
+    padding: 5px;
+    width: 100%;
+    max-width: 275px;
+    margin: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 0 20px;
+    font-size: 1em;
+    background-color: #ffd800;
+    margin: 15px 0;
+    border: 0;
+    width: 100%;
+    max-width: 150px;
+    height: 30px;
+}
+
+.btn:hover {
+    background-color: #ffc800;
+}
+
+.grid {
+    padding: 10px;
+}
+
+.icon {
+    color: #ff6a00;
+}
+
+iframe {
+    padding: 20px;
+}
+
+footer {
+    padding-top: 10px;
+    text-align: right;
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+}
+
+footer ul {
+    display: flex;
+    justify-content: right;
+}
+
+footer li {
+    padding-left: 10px;
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.product {
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px;
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.level {
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 0;
+    background-color: #ddd;
+    width: 100%;
+}
+
+.product > ol > li {
+    margin: 15px 0;
+}
+
+@media (max-width: 600px) {
+    li, a {
+        font-size: 14px;
+    }
+
+    #header-img {
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width: 955px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #hero {
+        padding-top: 150px;
+    }
+}
